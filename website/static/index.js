@@ -5,5 +5,4 @@ function deleteNote(noteId){
     }).then((res) =>{
         window.location.href = '/'
     })
-    
 }

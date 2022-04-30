@@ -1,48 +1,54 @@
 {% extends "base.html" %}{% block title %}Sign Up{% endblock %} {% block content
 %}
 <form method="POST">
-  <h3 allign="center">Sign up</h3>
+  <h3 align="center">Создать аккаунт</h3>
   <div class="form-group">
-    <label for="email">Email adress</label>
+    <label for="email">Адрес почты</label>
+
     <input
       type="email"
       class="form-control"
       id="email"
       name="email"
-      placeholder="Enter email"
+      placeholder="Введите адрес почты"
+      padding="30"
     />
   </div>
   <div class="form-group">
-    <label for="firstName">first Name</label>
+    <label for="firstName">Имя</label>
     <input
       type="name"
       class="form-control"
       id="firstName"
       name="firstName"
-      placeholder="Enter first name"
+      placeholder="Введите ваше имя"
     />
   </div>
   <div class="form-group">
-    <label for="password1">Password</label>
+    <label for="password1">Пароль</label>
     <input
       type="password"
       class="form-control"
       id="password1"
       name="password1"
-      placeholder="Enter password"
+      placeholder="Введите пароль"
     />
   </div>
   <div class="form-group">
-    <label for="password2">Confirm password</label>
+    <label for="password2">Подтвердите пароль</label>
     <input
       type="password"
       class="form-control"
       id="password2"
       name="password2"
-      placeholder="Confirm password"
+      placeholder="Подтвердите пароль"
     />
   </div>
   <br />
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div align="center">
+    <button type="submit" class="btn btn-primary" id="create_account_button">
+      Создать
+    </button>
+  </div>
 </form>
 {% endblock %}
